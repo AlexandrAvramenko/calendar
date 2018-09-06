@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/11.1.0/nouislider.min.css">
+    <title>Calendar</title>
+</head>
+<body>
+
+<header>
+    <div class="header">
+        <div class="logo">Logo example</div>
+        <div class="menu">
+            <div class="tabs">
+                <ul class="tabs__caption">
+                    <li class="tabs__item"><img src="assets/i/header-icon1.png" alt="icon"></li>
+                    <li class="tabs__item active"><img src="assets/i/header-icon2.png" alt="icon"></li>
+                    <li class="tabs__item"><img src="assets/i/header-icon3.png" alt="icon"></li>
+                    <li class="tabs__item"><img src="assets/i/header-icon4.png" alt="icon"></li>
+                </ul>
+
+                <div class="tabs__content">
+                    Содержимое первого блока
+                </div>
+
+                <div class="tabs__content active">
+                    <div class="dateRanges">
+                        <div class="dateRanges-left">
+                            <input type="text" name="daterange" class="dateRanges-left__daterange"
+                                   value="01/01/2018 - 01/15/2018"/>
+                        </div>
+                        <div class="dateRanges-right">
+                            <div class="dataSlider">
+                                <div class="lower-value" id="lower-value"></div>
+                                <div class="nonlinear" id="nonlinear"></div>
+                                <div class="upper-value" id="upper-value"></div>
+                            </div>
+                            <ul class="dateRanges-right__list">
+                                <li class="dateRanges-right__item col-3">Q1’16</li>
+                                <li class="dateRanges-right__item col-3">Q2’16</li>
+                                <li class="dateRanges-right__item col-1">J’16</li>
+                                <li class="dateRanges-right__item col-1">A’16</li>
+                                <li class="dateRanges-right__item col-1">S’16</li>
+                                <li class="dateRanges-right__item col-3">O’16</li>
+                                <li class="dateRanges-right__item col-1">N’16</li>
+                                <li class="dateRanges-right__item col-1">D’16</li>
+                                <li class="dateRanges-right__item col-6">H1’17</li>
+                                <li class="dateRanges-right__item col-3">Q3’17</li>
+                                <li class="dateRanges-right__item col-1">Q4’17</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <section class="design">
+                        <div class="left">
+                            <ul class="left__list">
+                                <li class="left__item sky-blue">Design ux</li>
+                                <li class="left__item pink">Research</li>
+                                <li class="left__item yellow">In progress</li>
+                                <li class="left__item green">Backlog</li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <ul class="right__list">
+                                <li class="right__item">
+                                    <ul class="right__sublist">
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1 pink">Das...</li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-3 pink">Template</li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-6"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1"></li>
+                                    </ul>
+                                </li>
+                                <li class="right__item">
+                                    <ul class="right__sublist">
+                                        <li class="right__subitem col-6 yellow">UX</li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1 yellow">Flo...</li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-3 yellow">UX</li>
+                                        <li class="right__subitem col-1"></li>
+                                    </ul>
+                                </li>
+                                <li class="right__item">
+                                    <ul class="right__sublist">
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1 green">Flat...</li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-6"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1"></li>
+                                    </ul>
+                                </li>
+                                <li class="right__item">
+                                    <ul class="right__sublist">
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-4 green">Prototyping</li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-6"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-3 green">Private Policy</li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-2"></li>
+                                        <li class="right__subitem col-1"></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="slicing">
+                        <div class="left">
+                            <ul class="left__list">
+                                <li class="left__item sky-blue">Slicing</li>
+                                <li class="left__item pink">Research</li>
+                                <li class="left__item yellow">In progress</li>
+                                <li class="left__item red">Reopened</li>
+                                <li class="left__item grey">Status:none</li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <ul class="right__list">
+                                <li class="right__item">
+                                    <ul class="right__sublist">
+                                        <li class="right__subitem col-3 white">&nbsp;</li>
+                                        <li class="right__subitem col-3 white"></li>
+                                        <li class="right__subitem col-1 white"></li>
+                                        <li class="right__subitem col-1 white"></li>
+                                        <li class="right__subitem col-1 white"></li>
+                                        <li class="right__subitem col-3 white"></li>
+                                        <li class="right__subitem col-1 white"></li>
+                                        <li class="right__subitem col-1 white"></li>
+                                        <li class="right__subitem col-6 white"></li>
+                                        <li class="right__subitem col-3 white"></li>
+                                        <li class="right__subitem col-1 white"></li>
+                                    </ul>
+                                </li>
+                                <li class="right__item">
+                                    <ul class="right__sublist">
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-3 yellow">Home page Design</li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-6"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1"></li>
+                                    </ul>
+                                </li>
+                                <li class="right__item">
+                                    <ul class="right__sublist">
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1 yellow">...</li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-6"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1"></li>
+                                    </ul>
+                                </li>
+                                <li class="right__item">
+                                    <ul class="right__sublist">
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-3 red">Home page Design</li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-2"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-2 red">Buttons</li>
+                                        <li class="right__subitem col-6"></li>
+                                    </ul>
+                                </li>
+                                <li class="right__item">
+                                    <ul class="right__sublist">
+                                        <li class="right__subitem col-4 red">Planing</li>
+                                        <li class="right__subitem col-2"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-6"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1"></li>
+                                    </ul>
+                                </li>
+                                <li class="right__item">
+                                    <ul class="right__sublist">
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-3 grey">Terra</li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-6"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1"></li>
+                                    </ul>
+                                </li>
+                                <li class="right__item">
+                                    <ul class="right__sublist">
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-2"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-6"></li>
+                                        <li class="right__subitem col-2 grey">Incognito</li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1"></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="architecture">
+                        <div class="left">
+                            <ul class="left__list">
+                                <li class="left__item sky-blue">Architecture</li>
+                                <li class="left__item pink">Research</li>
+                                <li class="left__item yellow">In progress</li>
+                                <li class="left__item green">Backlog</li>
+                                <li class="left__item blue">New</li>
+                                <li class="left__item rebeccapurple">Completed</li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <ul class="right__list">
+                                <li class="right__item">
+                                    <ul class="right__sublist">
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1 pink">Das...</li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-6"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1"></li>
+                                    </ul>
+                                </li>
+                                <li class="right__item">
+                                    <ul class="right__sublist">
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-6"></li>
+                                        <li class="right__subitem col-1 yellow">Flo...</li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-3 yellow">UX</li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                    </ul>
+                                </li>
+                                <li class="right__item">
+                                    <ul class="right__sublist">
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1 green">Flat...</li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-6"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1"></li>
+                                    </ul>
+                                </li>
+                                <li class="right__item">
+                                    <ul class="right__sublist">
+                                        <li class="right__subitem col-2"></li>
+                                        <li class="right__subitem col-4 green">Prototyping</li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-6"></li>
+                                        <li class="right__subitem col-3 green">Private Policy</li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1"></li>
+                                    </ul>
+                                </li>
+                                <li class="right__item">
+                                    <ul class="right__sublist">
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-6"></li>
+                                        <li class="right__subitem col-2 blue">Programming</li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                    </ul>
+                                </li>
+                                <li class="right__item">
+                                    <ul class="right__sublist">
+                                        <li class="right__subitem col-2 rebeccapurple">Meeting</li>
+                                        <li class="right__subitem col-4"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1 rebeccapurple">Me...</li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-1"></li>
+                                        <li class="right__subitem col-6"></li>
+                                        <li class="right__subitem col-3"></li>
+                                        <li class="right__subitem col-1"></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="tabs__content">
+                    Содержимое третьего блока
+                </div>
+
+                <div class="tabs__content">
+                    Содержимое четвертого блока
+                </div>
+            </div>
+
+            <div class="buttons">
+                <a class="link" href="#">Save</a>
+                <a class="btn" href="#">Create</a>
+            </div>
+
+            <div class="sitebar">
+                <ul class="sitebar__caption">
+                    <li class="sitebar__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="24" height="27">
+                            <path class="active-icons" d="M7.934 14.675A.99.99 0 0 0 7 14a1 1 0 0 0 0 2c.2 0 .376-.074.532-.175a4.069 4.069 0 0 1-.594.87A.988.988 0 0 0 6 16a1 1 0 0 0-1 1c0 .303.142.565.354.749A3.973 3.973 0 0 1 4 18a4 4 0 0 1-4-4c0-1.551.892-2.881 2.183-3.545A.976.976 0 0 0 2 11a1 1 0 0 0 2 0 .992.992 0 0 0-.667-.933C3.551 10.03 3.772 10 4 10a1 1 0 0 0 1 1 .987.987 0 0 0 .857-.515c.301.162.588.347.838.577A.988.988 0 0 0 6 12a1 1 0 0 0 1 1 .989.989 0 0 0 .749-.354C7.902 13.07 8 13.522 8 14c0 .231-.027.455-.066.675zM2 17a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0-5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm1 3a1 1 0 1 0 2 0 1 1 0 0 0-2 0zm2-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm18.934-7.325A.99.99 0 0 0 23 4a1 1 0 0 0 0 2c.2 0 .376-.074.532-.175a4.069 4.069 0 0 1-.594.87A.988.988 0 0 0 22 6a1 1 0 0 0-1 1c0 .303.142.565.354.749A3.973 3.973 0 0 1 20 8a4 4 0 0 1-4-4c0-1.551.892-2.881 2.183-3.545A.976.976 0 0 0 18 1a1 1 0 0 0 2 0 .992.992 0 0 0-.667-.933C19.551.03 19.772 0 20 0a1 1 0 0 0 1 1 .987.987 0 0 0 .857-.515c.301.162.588.347.838.577A.988.988 0 0 0 22 2a1 1 0 0 0 1 1 .989.989 0 0 0 .749-.354C23.902 3.07 24 3.522 24 4c0 .231-.027.455-.066.675zM18 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0-5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm1 3a1 1 0 1 0 2 0 1 1 0 0 0-2 0zm2-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm2.934 20.675A.99.99 0 0 0 23 22a1 1 0 0 0 0 2c.2 0 .376-.074.532-.175a4.069 4.069 0 0 1-.594.87A.988.988 0 0 0 22 24a1 1 0 0 0-1 1c0 .303.142.565.354.749A3.973 3.973 0 0 1 20 26a4 4 0 0 1-4-4c0-1.551.892-2.881 2.183-3.545A.976.976 0 0 0 18 19a1 1 0 0 0 2 0 .992.992 0 0 0-.667-.933c.218-.037.439-.067.667-.067a1 1 0 0 0 1 1 .987.987 0 0 0 .857-.515c.301.162.588.347.838.577A.988.988 0 0 0 22 20a1 1 0 0 0 1 1 .989.989 0 0 0 .749-.354c.153.424.251.876.251 1.354 0 .231-.027.455-.066.675zM18 25a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0-5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm1 3a1 1 0 1 0 2 0 1 1 0 0 0-2 0zm2-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                                  fill="#febac3" fill-rule="evenodd"/>
+                            <path class="active-icons" d="M16.551 19.189c-.229.24-.425.504-.596.783l-7.54-4.801a4.746 4.746 0 0 0 .001-3.38l7.542-4.764c.774 1.276 2.132 2.126 3.678 2.126C22.042 9.153 24 7.1 24 4.577 24 2.053 22.042 0 19.636 0c-2.406 0-4.363 2.053-4.363 4.577 0 .574.106 1.123.291 1.63l-7.552 4.77c-.78-1.247-2.123-2.073-3.648-2.073C1.957 8.904 0 10.957 0 13.481s1.957 4.577 4.364 4.577c1.525 0 2.867-.826 3.647-2.073l7.551 4.807a4.783 4.783 0 0 0-.29 1.634c0 1.222.454 2.372 1.278 3.236A4.25 4.25 0 0 0 19.636 27a4.246 4.246 0 0 0 3.085-1.338A4.66 4.66 0 0 0 24 22.426a4.66 4.66 0 0 0-1.279-3.237 4.226 4.226 0 0 0-6.17 0zM19.636.915c1.925 0 3.491 1.643 3.491 3.662 0 2.018-1.566 3.661-3.491 3.661-1.924 0-3.49-1.643-3.49-3.661 0-2.019 1.565-3.662 3.49-3.662zM4.364 17.142c-1.925 0-3.491-1.642-3.491-3.661S2.439 9.82 4.364 9.82s3.491 1.642 3.491 3.661-1.566 3.661-3.491 3.661zm17.74 7.873a3.38 3.38 0 0 1-4.936 0 3.733 3.733 0 0 1-1.022-2.589 3.73 3.73 0 0 1 1.022-2.589 3.398 3.398 0 0 1 2.468-1.071 3.4 3.4 0 0 1 2.469 1.071 3.73 3.73 0 0 1 1.022 2.589 3.73 3.73 0 0 1-1.023 2.589z"
+                                  fill="#fd586f" fill-rule="evenodd"/>
+                        </svg>
+                    </li>
+                    <li class="sitebar__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="29" height="29">
+                            <path class="active-icons" d="M24.042 17.394c-.033.023-.064.046-.101.06l-.037.022L29 20.46l-14.5 8.543L0 20.46l5.096-2.984L0 14.474l5.096-2.984L0 8.488 14.5-.003l14.499 8.491-5.096 3.002 5.096 2.984-4.957 2.92zM2.133 20.463l12.366 7.286 12.368-7.286-4.028-2.36-8.339 4.913-8.339-4.913-4.028 2.36zM26.867 8.49L14.5 1.248 2.133 8.49 14.5 15.777l8.337-4.912 4.03-2.375zm-4.028 3.627l-.169.099a.524.524 0 0 1-.495.378c-.038 0-.072-.014-.108-.022l-1.162.684a.54.54 0 0 1 .214.426.536.536 0 0 1-.527.545.528.528 0 0 1-.516-.482l-5.304 3.125c.004.027.015.05.015.078a.536.536 0 0 1-.528.544.535.535 0 0 1-.423-.852l-5.451-3.212a.537.537 0 0 1-.458.799.537.537 0 0 1-.528-.544c0-.292.224-.526.504-.539l-1.194-.703a.518.518 0 0 1-.365.154.524.524 0 0 1-.471-.309l-3.741 2.191.717.422a.51.51 0 0 1 .328-.128c.291 0 .528.244.528.545 0 .027-.012.051-.016.078l5.306 3.125a.528.528 0 0 1 .516-.482c.291 0 .527.243.527.544a.536.536 0 0 1-.215.426l1.162.684c.036-.008.07-.022.109-.022.234 0 .427.16.495.378l2.911 1.716 2.423-1.427c-.01-.041-.025-.08-.025-.123 0-.301.237-.544.528-.544.143 0 .271.059.366.154l1.194-.704a.534.534 0 0 1-.505-.539c0-.3.237-.544.528-.544a.537.537 0 0 1 .457.801l3.371-1.986 2.082-1.227a.536.536 0 0 1 .423-.853c.213 0 .396.133.479.321l1.046-.616-4.028-2.359zm.919 2.11a.536.536 0 0 1-.528-.544c0-.301.236-.544.528-.544.291 0 .528.243.528.544a.536.536 0 0 1-.528.544zm-1.583 1.633a.536.536 0 0 1-.528-.544c0-.301.236-.545.528-.545.291 0 .527.244.527.545 0 .3-.236.544-.527.544zm-1.583 1.632a.536.536 0 0 1-.528-.544c0-.3.236-.544.528-.544.291 0 .527.244.527.544a.535.535 0 0 1-.527.544zm-1.583-1.632a.536.536 0 0 1-.528-.544c0-.301.236-.545.528-.545.291 0 .527.244.527.545 0 .3-.236.544-.527.544zm-1.584 1.632a.535.535 0 0 1-.527-.544c0-.3.236-.544.527-.544.292 0 .528.244.528.544a.536.536 0 0 1-.528.544zm-1.583 1.633a.536.536 0 0 1-.527-.544c0-.301.236-.544.527-.544.292 0 .528.243.528.544 0 .3-.236.544-.528.544zm-1.583 1.632a.535.535 0 0 1-.527-.544c0-.3.236-.544.527-.544.292 0 .528.244.528.544a.536.536 0 0 1-.528.544zm-1.583-1.632a.537.537 0 0 1-.528-.544c0-.301.237-.544.528-.544.292 0 .528.243.528.544 0 .3-.236.544-.528.544zm-1.583-1.633a.536.536 0 0 1-.528-.544c0-.3.237-.544.528-.544.292 0 .528.244.528.544a.536.536 0 0 1-.528.544zM9.51 15.86a.537.537 0 0 1-.528-.544c0-.301.237-.545.528-.545.292 0 .528.244.528.545 0 .3-.236.544-.528.544zm-1.583 1.632a.536.536 0 0 1-.528-.544c0-.3.236-.544.528-.544.291 0 .528.244.528.544a.536.536 0 0 1-.528.544zM6.344 15.86a.536.536 0 0 1-.528-.544c0-.301.236-.545.528-.545.291 0 .527.244.527.545 0 .3-.236.544-.527.544zm-1.583-1.633a.536.536 0 0 1-.528-.544c0-.301.236-.544.528-.544.291 0 .527.243.527.544a.535.535 0 0 1-.527.544z"
+                                  fill="#fd586f" fill-rule="evenodd"/>
+                        </svg>
+                    </li>
+                    <li class="sitebar__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="26" height="26">
+                            <path class="active-icons" d="M16.934 13.675A.99.99 0 0 0 16 13a1 1 0 0 0 0 2c.2 0 .376-.074.532-.175a4.069 4.069 0 0 1-.594.87A.988.988 0 0 0 15 15a1 1 0 0 0-1 1c0 .303.142.565.354.749A3.973 3.973 0 0 1 13 17a4 4 0 0 1-4-4c0-1.551.892-2.881 2.183-3.545A.976.976 0 0 0 11 10a1 1 0 0 0 2 0 .992.992 0 0 0-.667-.933C12.551 9.03 12.772 9 13 9a1 1 0 0 0 1 1 .987.987 0 0 0 .857-.515c.301.162.588.347.838.577A.988.988 0 0 0 15 11a1 1 0 0 0 1 1 .989.989 0 0 0 .749-.354c.153.424.251.876.251 1.354 0 .231-.027.455-.066.675zM11 16a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0-5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm1 3a1 1 0 1 0 2 0 1 1 0 0 0-2 0zm2-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                                  fill-rule="evenodd" fill="#febac3"/>
+                            <path class="active-icons" d="M24.661 15.889h-2.432a.907.907 0 0 0-.863.576.908.908 0 0 0 .202 1.018l1.72 1.719c.253.254.392.59.392.947 0 .358-.139.694-.392.947l-2.192 2.192c-.506.506-1.388.507-1.894 0l-1.72-1.72a.908.908 0 0 0-1.017-.202.909.909 0 0 0-.577.863v2.432c0 .739-.6 1.339-1.338 1.339h-3.1a1.34 1.34 0 0 1-1.339-1.339v-2.432a.908.908 0 0 0-.576-.863.91.91 0 0 0-1.018.202l-1.72 1.72c-.506.507-1.387.506-1.893 0l-2.192-2.192a1.33 1.33 0 0 1-.392-.947c0-.357.139-.694.392-.947l1.72-1.719a.911.911 0 0 0 .202-1.018.908.908 0 0 0-.863-.576H1.338A1.34 1.34 0 0 1 0 14.55v-3.1c0-.739.6-1.339 1.338-1.339h2.433a.908.908 0 0 0 .863-.576.911.911 0 0 0-.202-1.018l-1.72-1.719a1.333 1.333 0 0 1-.392-.947c0-.358.139-.694.392-.947l2.192-2.192c.505-.506 1.387-.507 1.893 0l1.72 1.719a.909.909 0 0 0 1.018.203.908.908 0 0 0 .576-.863V1.339C10.111.6 10.711 0 11.45 0h3.1c.738 0 1.339.6 1.339 1.339v2.432c0 .391.215.713.576.863.36.15.742.073 1.018-.203l1.719-1.719c.507-.507 1.388-.506 1.894 0l2.192 2.192c.253.253.392.589.392.947 0 .357-.139.694-.392.947l-1.72 1.719a.908.908 0 0 0-.202 1.018c.15.361.472.576.863.576h2.432c.739 0 1.339.6 1.339 1.339v3.1c0 .738-.6 1.339-1.339 1.339zm.376-4.439a.375.375 0 0 0-.376-.375h-2.432a1.868 1.868 0 0 1-1.753-1.171 1.869 1.869 0 0 1 .412-2.068l1.719-1.719a.376.376 0 0 0 0-.532l-2.192-2.192a.375.375 0 0 0-.531 0l-1.72 1.719a1.867 1.867 0 0 1-2.067.412 1.868 1.868 0 0 1-1.171-1.753V1.339a.376.376 0 0 0-.376-.376h-3.1a.376.376 0 0 0-.376.376v2.432c0 .782-.449 1.454-1.171 1.752-.723.3-1.515.141-2.067-.411l-1.72-1.72a.377.377 0 0 0-.531 0L3.392 5.585a.377.377 0 0 0 0 .531l1.72 1.72c.554.552.711 1.345.412 2.067a1.868 1.868 0 0 1-1.753 1.171H1.338a.376.376 0 0 0-.375.376v3.1c0 .207.168.376.375.376h2.433c.782 0 1.454.449 1.753 1.17a1.869 1.869 0 0 1-.412 2.068l-1.72 1.719a.378.378 0 0 0 0 .532l2.193 2.192a.376.376 0 0 0 .531 0l1.72-1.72a1.868 1.868 0 0 1 2.067-.411 1.868 1.868 0 0 1 1.171 1.753v2.432c0 .207.168.376.376.376h3.1a.377.377 0 0 0 .376-.376v-2.432c0-.782.449-1.454 1.171-1.753a1.868 1.868 0 0 1 2.067.412l1.72 1.719a.374.374 0 0 0 .531 0l2.192-2.192a.375.375 0 0 0 0-.531l-1.719-1.72a1.866 1.866 0 0 1-.412-2.067 1.868 1.868 0 0 1 1.753-1.171h2.432a.376.376 0 0 0 .376-.376v-3.1zM13 17.333A4.337 4.337 0 0 1 8.667 13 4.337 4.337 0 0 1 13 8.667 4.338 4.338 0 0 1 17.333 13 4.338 4.338 0 0 1 13 17.333zm0-7.703A3.374 3.374 0 0 0 9.63 13 3.374 3.374 0 0 0 13 16.37 3.374 3.374 0 0 0 16.37 13 3.374 3.374 0 0 0 13 9.63z"
+                                  fill="#fd7285" fill-rule="evenodd"/>
+                        </svg>
+                    </li>
+                    <li class="sitebar__item">
+                        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="27" height="27">
+                            <path class="active-icons" d="M11 24a1 1 0 0 0 2 0h3a1 1 0 0 0-1 1c0 .303.142.565.354.749A3.973 3.973 0 0 1 14 26c-1.477 0-2.752-.809-3.445-2H11zm6.413 0c-.141.245-.285.488-.475.695A.988.988 0 0 0 16 24h1.413z"
+                                  fill-rule="evenodd" fill="#fe9fac"/>
+                            <path class="active-icons" d="M18.177 23.613C17.574 25.597 15.688 27 13.492 27c-2.181 0-4.081-1.407-4.685-3.387H0l.003-.567c.012-2.295 1.687-4.26 3.974-4.762v-6.602c0-4.1 2.826-7.577 6.705-8.733v-.244C10.682 1.213 11.946 0 13.5 0c1.553 0 2.817 1.213 2.817 2.705v.244c3.88 1.156 6.706 4.634 6.706 8.733v6.602c2.287.502 3.961 2.467 3.974 4.762l.003.567h-8.823zm-4.685 2.259c1.551 0 2.907-.919 3.458-2.259h-6.921c.553 1.339 1.921 2.259 3.463 2.259zM13.5 1.129c-.898 0-1.626.697-1.637 1.556a9.893 9.893 0 0 1 1.636-.145c.56 0 1.105.056 1.638.145-.012-.859-.74-1.556-1.637-1.556zm8.883 18.193H10.119v-1.129h11.728v-6.511c0-4.418-3.744-8.013-8.348-8.013-4.602 0-8.346 3.595-8.346 8.013v6.511H6.73v1.129H4.614c-1.751.217-3.12 1.528-3.388 3.162h24.547c-.268-1.635-1.638-2.946-3.39-3.162z"
+                                  fill="#fd7285" fill-rule="evenodd"/>
+                        </svg>
+                    </li>
+                </ul>
+
+                <div class="sitebar__content">
+                    Содержимое первого блока
+                </div>
+
+                <div class="sitebar__content">
+                    <section class="sitebar-design">
+                        <div class="sitebar-design__caption">design</div>
+                        <div class="layout spoiler">
+                            <div class="spoiler__caption folded"><a href="javascript:void(0);">Layout</a></div>
+                            <div class="spoiler__content">
+                                <div class="dropdown">
+                                    <label class="dropdown__label">Header</label>
+                                    <a href="#" class="dropdown__dropbtn">Category</a>
+                                    <div class="dropdown__content">
+                                        <a class="dropdown__item" href="#">Dropdown link 1</a>
+                                        <a class="dropdown__item" href="#">Dropdown link 2</a>
+                                        <a class="dropdown__item" href="#">Dropdown link 3</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown">
+                                    <label class="dropdown__label">Subheader</label>
+                                    <a href="#" class="dropdown__dropbtn">Status</a>
+                                    <div class="dropdown__content">
+                                        <a class="dropdown__item" href="#">Dropdown link 1</a>
+                                        <a class="dropdown__item" href="#">Dropdown link 2</a>
+                                        <a class="dropdown__item" href="#">Dropdown link 3</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown">
+                                    <label class="dropdown__label">Item label</label>
+                                    <a href="#" class="dropdown__dropbtn">Task name</a>
+                                    <div class="dropdown__content">
+                                        <a class="dropdown__item" href="#">Dropdown link 1</a>
+                                        <a class="dropdown__item" href="#">Dropdown link 2</a>
+                                        <a class="dropdown__item" href="#">Dropdown link 3</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="colors spoiler">
+                            <div class="spoiler__caption folded"><a href="javascript:void(0);">Colors</a></div>
+                            <div class="spoiler__content">
+                                <div class="dropdown">
+                                    <label class="dropdown__label">Color by</label>
+                                    <a href="#" class="dropdown__dropbtn">Status</a>
+                                    <div class="dropdown__content">
+                                        <a class="dropdown__item" href="#">Dropdown link 1</a>
+                                        <a class="dropdown__item" href="#">Dropdown link 2</a>
+                                        <a class="dropdown__item" href="#">Dropdown link 3</a>
+                                    </div>
+                                </div>
+                                <label class="form-group checkbox">
+                                    <input type="checkbox" name="checkbox">
+                                    <span class="box"></span>
+                                    <span class="text-box">Subheader inherits  header color</span>
+                                </label>
+                                <div class="header-color">
+                                    <label class="header-color__label">header-color</label>
+                                    <ul class="header-color__list">
+                                        <li class="header-color__item sky-blue"></li>
+                                        <li class="header-color__item">Header</li>
+                                        <li class="header-color__item light-blue"></li>
+                                        <li class="header-color__item"></li>
+                                        <li class="header-color__item royal-blue"></li>
+                                        <li class="header-color__item"></li>
+                                    </ul>
+                                </div>
+                                <div class="subheaders-color">
+                                    <label class="subheaders-color__label">Subheaders-color</label>
+                                    <ul class="header-color__list">
+                                        <li class="subheaders-color__item pink"></li>
+                                        <li class="subheaders-color__item">Research</li>
+                                        <li class="subheaders-color__item yellow"></li>
+                                        <li class="subheaders-color__item">In progress</li>
+                                        <li class="subheaders-color__item green"></li>
+                                        <li class="subheaders-color__item">Backlog</li>
+                                        <li class="subheaders-color__item red"></li>
+                                        <li class="subheaders-color__item">Reopened</li>
+                                        <li class="subheaders-color__item blue"></li>
+                                        <li class="subheaders-color__item">New</li>
+                                        <li class="subheaders-color__item grey"></li>
+                                        <li class="subheaders-color__item">None</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="sitebar__content">
+                    Содержимое третьего блока
+                </div>
+
+                <div class="sitebar__content">
+                    Содержимое четвертого блока
+                </div>
+            </div>
+            <div class="full-screen"></div>
+            <div class="status">
+                <div class="status__caption">
+                    <div class="caption-head">
+                        <span class="block-1"></span>
+                        <span class="block-2"></span>
+                        <span class="block-3"></span>
+                    </div>
+                    <div class="caption-body">?</div>
+                </div>
+                <div class="status__content">
+                    <label class="status__label">Status:</label>
+                    <ul class="status__list">
+                        <li class="status__item pink"></li>
+                        <li class="status__item">Research</li>
+                        <li class="status__item yellow"></li>
+                        <li class="status__item">In progress</li>
+                        <li class="status__item green"></li>
+                        <li class="status__item">Backlog</li>
+                        <li class="status__item red"></li>
+                        <li class="status__item">Reopened</li>
+                        <li class="status__item blue"></li>
+                        <li class="status__item">New</li>
+                        <li class="status__item grey"></li>
+                        <li class="status__item">None</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/custom.js"></script>
+</body>
+</html>
