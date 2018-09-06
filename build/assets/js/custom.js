@@ -66,8 +66,6 @@ var dateValues = [
     document.getElementById('upper-value')
 ];
 
-
 nonLinearSlider.noUiSlider.on('update', function (values, handle) {
-    // console.log(values);
     dateValues[handle].innerHTML = moment(new Date(+values[handle])).format('D MMM, YYYY');
 });
